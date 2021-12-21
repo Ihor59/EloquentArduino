@@ -129,7 +129,7 @@ bool capture_still() {
     print_frame(current_frame);
     Serial.println("---------------");
 #endif
-
+esp_camera_fb_return(frame_buffer); 
     return true;
 }
 
